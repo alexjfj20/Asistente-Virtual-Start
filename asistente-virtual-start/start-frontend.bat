@@ -1,0 +1,9 @@
+@echo off
+echo Iniciando frontend de Asistente Virtual...
+echo.
+echo Verificando dependencias...
+npm install
+echo.
+echo Iniciando servidor de desarrollo...
+npm run dev
+pause

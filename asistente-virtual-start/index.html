@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asistente Virtual Start</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#6EE7B7', // A lighter, vibrant teal/mint (emerald-300)
+              DEFAULT: '#10B981', // A mid-range teal/green (emerald-500)
+              dark: '#047857',  // A darker teal/green (emerald-700)
+            },
+            secondary: {
+              DEFAULT: '#EC4899', // A vibrant pink (pink-500)
+              dark: '#BE185D',   // A darker pink (pink-700)
+            },
+            neutral: {
+              light: '#F3F4F6',    // gray-100
+              default: '#6B7280',   // gray-500
+              dark: '#1F2937',     // gray-800
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

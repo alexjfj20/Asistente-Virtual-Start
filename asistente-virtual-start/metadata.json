@@ -1,0 +1,8 @@
+{
+  "name": "Asistente Virtual Start",
+  "description": "A landing page offering services and resources for aspiring virtual assistants, primarily targeting a Spanish-speaking audience. It includes sections for services, booking, testimonials, blog/resources, and contact information.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}
