@@ -9,15 +9,17 @@
     "dev": "nodemon server.js",
     "test": "node test-api.js",
     "setup-db": "node setup-database.js",
+    "setup-supabase": "node supabase-setup.js",
     "test:server": "echo \"Iniciando servidor para pruebas...\" && npm run dev",
     "build": "echo \"No build step required for Node.js\"",
-    "postinstall": "echo \"Dependencias instaladas. Ejecuta 'npm run setup-db' para configurar la base de datos.\""
+    "postinstall": "echo \"Dependencias instaladas. Ejecuta 'npm run setup-supabase' para configurar Supabase.\""
   },
   "keywords": [
     "api",
     "backend",
     "express",
     "postgresql",
+    "supabase",
     "asistente-virtual"
   ],
   "author": "Asistente Virtual Start",
@@ -31,7 +33,8 @@
     "jsonwebtoken": "^9.0.2",
     "helmet": "^7.1.0",
     "express-rate-limit": "^7.1.5",
-    "validator": "^13.11.0"
+    "validator": "^13.11.0",
+    "@supabase/supabase-js": "^2.39.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
