@@ -1,7 +1,7 @@
 // Servicio API para comunicarse con el backend
 import React from 'react';
 
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api';
 
 export class ApiService {
   // Método base para hacer requests

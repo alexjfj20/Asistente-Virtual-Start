@@ -1,93 +1,97 @@
-import { Service, Testimonial, BlogPost, ServiceType, NavLink } from './types';
+export const APP_NAME = 'Asistente Virtual Start';
 
-export const WHATSAPP_PHONE_NUMBER = "573507954764"; // Colombian number
-export const WHATSAPP_LINK_BASE = `https://wa.me/${WHATSAPP_PHONE_NUMBER}`;
-export const APP_NAME = "Asistente Virtual Start";
-
-export const SERVICES_DATA: Service[] = [
-  {
-    id: "all-in-one",
-    title: "Plan Todo en Uno – Potenciado por IA",
-    price: "$17 USD / mes",
-    description: "Accede a todos los servicios inteligentes desde un solo plan. Sin confusión, sin paquetes separados. Todo lo que necesitas para trabajar en remoto, desde un solo lugar.",
-    features: [
-      "Optimización automática de tu hoja de vida (PDF o DOC)",
-      "Asesoría personalizada con IA para destacar tu perfil",
-      "Simulacros de entrevistas remotas para Call Center",
-      "Entrenamiento de voz y análisis de acento con IA",
-      "Generador de propuestas freelance + buscador inteligente de oportunidades",
-      "Panel de usuario con historial, favoritos y progreso guardado",
-      "Acceso 24/7 desde cualquier dispositivo",
-    ],
-    supportNote: "🔧 Incluye soporte técnico exclusivo sobre el uso de la aplicación.\n(No se ofrece soporte ni asesoría individual sobre plataformas externas o procesos de contratación reales.)",
-    ctaText: "✅ Acceder a Todo por $17 USD / mes",
-    type: ServiceType.ALL_IN_ONE,
-    aiServiceType: 'all_in_one',
-  },
-];
-
-export const TESTIMONIALS_DATA: Testimonial[] = [
-  {
-    id: "t1",
-    quote: "¡Gracias a Asistente Virtual Start conseguí mi primer cliente en menos de una semana! La asesoría fue clave y el CV quedó espectacular.",
-    author: "Ana Pérez",
-    role: "Asistente Virtual Freelancer",
-    image: "https://picsum.photos/seed/testimonial1/100/100"
-  },
-  {
-    id: "t2",
-    quote: "El arreglo de mi hoja de vida fue increíble. Recibí muchas más respuestas de las que esperaba. ¡Totalmente recomendado!",
-    author: "Carlos López",
-    role: "Emprendedor Digital",
-    image: "https://picsum.photos/seed/testimonial2/100/100"
-  },
-  {
-    id: "t3",
-    quote: "No sabía por dónde empezar y esta plataforma me dio todas las herramientas y la confianza. ¡Súper agradecida!",
-    author: "Sofía Gómez",
-    role: "Nueva Asistente Virtual",
-    image: "https://picsum.photos/seed/testimonial3/100/100"
-  },
-];
-
-export const BLOG_POSTS_DATA: BlogPost[] = [
-  {
-    id: "b1",
-    title: "5 Plataformas Esenciales para Encontrar Empleo Remoto como AV",
-    summary: "Descubre las mejores plataformas y cómo usarlas para iniciar tu búsqueda de trabajo como asistente virtual.",
-    imageUrl: "https://picsum.photos/seed/blog1/400/250",
-    link: "#!" // Placeholder link
-  },
-  {
-    id: "b2",
-    title: "Cómo Prepararte para tu Primera Entrevista de Asistente Virtual",
-    summary: "Consejos prácticos para destacar en tus entrevistas, mostrar tu potencial y superar los nervios.",
-    imageUrl: "https://picsum.photos/seed/blog2/400/250",
-    link: "#!" // Placeholder link
-  },
-  {
-    id: "b3",
-    title: "Herramientas Gratuitas Imprescindibles para Asistentes Virtuales Eficientes",
-    summary: "Optimiza tu trabajo y productividad con estas herramientas gratuitas que te ayudarán a ser más eficiente desde el día uno.",
-    imageUrl: "https://picsum.photos/seed/blog3/400/250",
-    link: "#!" // Placeholder link
-  },
-];
-
-// NAV_LINKS_DATA will be dynamically generated in App.tsx based on auth state
-// export const NAV_LINKS_DATA: NavLink[] = [
-//   { href: "#inicio", label: "Inicio" },
-//   { href: "#servicios", label: "Servicios" },
-//   { href: "#agendar", label: "Agendar" },
-//   { href: "#testimonios", label: "Testimonios" },
-//   { href: "#blog", label: "Recursos" },
-//   { href: "#contacto", label: "Contacto" },
-// ];
+export const WHATSAPP_LINK_BASE = 'https://wa.me/1234567890'; // Cambiar por tu número real
 
 export const PAYMENT_METHODS = [
-    { name: "Stripe", logoUrl: "https://js.stripe.com/v3/fingerprinted/img/stripe-logo-blurple.svg" }, // Example, use actual or generic icons
-    { name: "MercadoPago", logoUrl: "https://img.stackshare.io/service/2721/mercadopago.png" },
-    { name: "Nequi", logoUrl: "https://seeklogo.com/images/N/nequi-logo-5177A0F7E0-seeklogo.com.png" },
-    { name: "DaviPlata", logoUrl: "https://seeklogo.com/images/D/daviplata-logo-5465C0C14D-seeklogo.com.png" },
-    { name: "QR Code", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"},
+  {
+    name: 'Stripe',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg'
+  },
+  {
+    name: 'MercadoPago',
+    logoUrl: 'https://img.stackshare.io/service/2721/mercadopago.png'
+  },
+  {
+    name: 'Nequi',
+    logoUrl: 'https://seeklogo.com/images/N/nequi-logo-85F39E2F5E-seeklogo.com.png'
+  },
+  {
+    name: 'DaviPlata',
+    logoUrl: 'https://seeklogo.com/images/D/daviplata-logo-6F3E1E5E5E-seeklogo.com.png'
+  },
+  {
+    name: 'QR Code',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg'
+  }
+];
+
+export const SERVICES_DATA = [
+  {
+    id: 'service-1',
+    title: 'Plan Todo-en-Uno - Carrera Remota',
+    price: '$17 USD/mes',
+    description: 'Acceso completo a todas nuestras herramientas y servicios de IA para impulsar tu carrera como Asistente Virtual.',
+    features: [
+      'Optimización de CV con IA',
+      'Preparación para entrevistas',
+      'Búsqueda activa de empleo',
+      'Evaluación de perfil freelance',
+      'Evaluación para call centers',
+      'Coaching profesional personalizado',
+      'Acceso a todas las herramientas IA',
+      'Soporte prioritario 24/7'
+    ],
+    supportNote: 'Incluye soporte completo y actualizaciones',
+    ctaText: 'Comenzar Ahora',
+    type: 'ALL_IN_ONE' as const,
+    aiServiceType: 'all_in_one' as const
+  }
+];
+
+export const TESTIMONIALS_DATA = [
+  {
+    id: 'testimonial-1',
+    quote: 'Gracias a este servicio conseguí mi primer trabajo como asistente virtual en menos de un mes. El CV optimizado por IA fue clave.',
+    author: 'María González',
+    role: 'Asistente Virtual',
+    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
+  },
+  {
+    id: 'testimonial-2',
+    quote: 'La asesoría personalizada me ayudó a enfocar mi búsqueda y ahora trabajo con clientes internacionales.',
+    author: 'Carlos Ruiz',
+    role: 'Freelancer',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
+  },
+  {
+    id: 'testimonial-3',
+    quote: 'Excelente servicio. Me prepararon perfectamente para las entrevistas y ahora tengo un trabajo estable remoto.',
+    author: 'Ana Martínez',
+    role: 'Especialista en Atención al Cliente',
+    image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
+  }
+];
+
+export const BLOG_POSTS_DATA = [
+  {
+    id: 'blog-1',
+    title: 'Cómo Optimizar tu CV para Trabajos Remotos',
+    summary: 'Descubre las claves para crear un currículum que destaque en el mercado de trabajo remoto y capture la atención de los reclutadores.',
+    imageUrl: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1',
+    link: '#'
+  },
+  {
+    id: 'blog-2',
+    title: 'Las Mejores Plataformas para Encontrar Trabajo como Asistente Virtual',
+    summary: 'Una guía completa de las plataformas más efectivas para conseguir clientes y proyectos como asistente virtual freelance.',
+    imageUrl: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1',
+    link: '#'
+  },
+  {
+    id: 'blog-3',
+    title: 'Herramientas Esenciales para Asistentes Virtuales',
+    summary: 'Conoce las herramientas digitales indispensables que todo asistente virtual profesional debe dominar.',
+    imageUrl: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1',
+    link: '#'
+  }
 ];

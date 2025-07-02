@@ -1,0 +1,43 @@
+{
+  "name": "asistente-virtual-start-monorepo",
+  "version": "1.0.0",
+  "description": "Plataforma completa para aspirantes a Asistentes Virtuales",
+  "private": true,
+  "workspaces": [
+    "backend-api",
+    "asistente-virtual-start"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend-api && npm install --prefix asistente-virtual-start",
+    "setup": "npm run install:all && npm run setup:db",
+    "setup:db": "cd backend-api && npm run setup-db",
+    "dev:backend": "cd backend-api && npm run dev",
+    "dev:frontend": "cd asistente-virtual-start && npm run dev",
+    "start:backend": "cd backend-api && npm start",
+    "start:frontend": "cd asistente-virtual-start && npm run dev",
+    "build:frontend": "cd asistente-virtual-start && npm run build",
+    "test:backend": "cd backend-api && npm test",
+    "test:connectivity": "node test-connectivity.js",
+    "deploy:setup": "echo 'Ver DEPLOY-GUIDE.md para instrucciones de deploy'",
+    "clean": "rm -rf node_modules backend-api/node_modules asistente-virtual-start/node_modules",
+    "reset:db": "cd backend-api && npm run setup-db"
+  },
+  "keywords": [
+    "asistente-virtual",
+    "react",
+    "nodejs",
+    "postgresql",
+    "ai",
+    "freelance"
+  ],
+  "author": "Asistente Virtual Start Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/asistente-virtual-start.git"
+  }
+}
